@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>WhatsApp Link Generador</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <style>
+      body {
+        background-color: #f8f9fa;
+      }
+      .container {
+        margin-top: 50px;
+      }
+      .form-control {
+        border-radius: 0;
+      }
+      #result {
+        display: none;
+        margin-top: 20px;
+      }
+      #result a {
+        display: block;
+        font-size: 18px;
+        font-weight: 600;
+        color: #28a745;
+        margin-top: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h1>WhatsApp Link Generador</h1>
+      <form id="generator-form">
+        <div class="form-group">
+          <label for="phone">Numero de telefono</label>
+          <input type="tel" class="form-control required" id="phone" placeholder="Enter phone number">
+        </div>
+        <div class="form-group">
+          <label for="message">Mensaje (optional)</label>
+          <textarea class="form-control required" id="message" rows="3" placeholder="Enter message"></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary btn-lg">Generar Link WhatsApp </button>
+      </form>
+      <div id="result">
+        <p>Copia el link desde aca:</p>
+        <a id="whatsapp-link" href="#" target="_blank"></a>
+      </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="js/scripts.js"></script>
+
+
+  </body>
+</html>
